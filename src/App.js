@@ -5,18 +5,43 @@ import Sidebar from './Sidebar/Sidebar';
 import MainContent from './MainContent/MainContent';
 
 class App extends Component {
+  constructor(props)
+  {
+    super(props);
+    this.navItems = {
+      'home': <h2>Welcome home</h2>,
+      'about me': <h2>about page</h2>,
+      'contact': <p>contact me here</p>,
+      'stream': <p>this feature isn't ready yet</p>,
+      'misc': <h1>I bet you want to know what goes here</h1>
+    };
 
-  sidebarClicked = (event) => {
-    console.log(event.target.textContent);
+    this.state = {
+      selectedItem: 'home'
+    }
   }
+
+  selectItem = (item) => {
+    this.setState({
+      selectedItem: item
+    })
+  }
+
+  sidebarClickHandler = (event) => {
+    const item = event.target.textContent;
+
+    this.selectItem(item);
+  }
+
+
 
   render () {
     return (
       <div className="App">
-        <Banner/>
-        <Sidebar click={this.sidebarClicked}/>;
+        <Banner click={() => this.selectItem('home')}/>
+        <Sidebar navKeys={Object.keys(this.navItems)} click={this.sidebarClickHandler}/>;
         <MainContent>
-          {true? <h1>hello world</h1> :<p>hi mom</p>}
+          {this.navItems[this.state.selectedItem]}
         </MainContent>
         <div style={{clear:'both'}}></div>
       </div>
