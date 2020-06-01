@@ -3,6 +3,7 @@ import './App.css';
 import Banner from './Banner/Banner';
 import Sidebar from './Sidebar/Sidebar';
 import MainContent from './MainContent/MainContent';
+import ContactContent from './ContactContent/ContactContent';
 
 class App extends Component {
   constructor(props)
@@ -11,7 +12,7 @@ class App extends Component {
     this.navItems = {
       'home': <h2>Welcome home</h2>,
       'about me': <h2>about page</h2>,
-      'contact': <p>contact me here</p>,
+      'contact': <ContactContent/>,
       'stream': <p>this feature isn't ready yet</p>,
       'misc': <h1>I bet you want to know what goes here</h1>
     };
@@ -35,11 +36,13 @@ class App extends Component {
 
 
 
+
   render () {
     return (
+      
       <div className="App">
         <Banner click={() => this.selectItem('home')}/>
-        <Sidebar navKeys={Object.keys(this.navItems)} click={this.sidebarClickHandler}/>;
+        <Sidebar navKeys={Object.keys(this.navItems)} click={this.sidebarClickHandler}/>
         <MainContent>
           {this.navItems[this.state.selectedItem]}
         </MainContent>
