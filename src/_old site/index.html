@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>pavlo tech</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        onload = e =>{
+            var cards = document.querySelectorAll('.card')
+            console.log(cards);
+            cards.forEach(card => {
+                card.addEventListener('mouseenter',e =>
+                {
+                    e.target.classList.add('green');
+                });
+                card.addEventListener('mouseleave',e =>
+                {
+                    e.target.classList.remove('green');
+                });
+            })
+        }
+    </script>
+
+</head>
+
+<body >
+    <div class="main-banner">
+        <h1>Welcome to pavlo.tech</h1>
+        <p class="name">A Pavlo Triantafyllides Site</p>
+    </div>
+
+
+    <div class="content">
+        <div class="card">
+            <h2>This is my first html-css site</h2>
+
+            <p class="card-text">
+                Hi!
+                <br> 
+                My name is <em>Pavlo Triantafyllides</em>, and I am a Software Engineer from Charlotte, North Carolina.
+                I recently graduated from <a href="http://www.clemson.edu/" target="_blank">Clemson University</a> with a Bachelors of Science in Computer Engineering. 
+                <br>
+                <strong>Go Tigers!</strong>
+                <br>
+                This summer I will be starting at Credit Karma as a Software Engineer I.
+            </p>
+
+            <div class="card-image">
+                <a href="http://www.clemson.edu/" target="_blank">
+                    <img src="./paw.png" alt="Clemson Paw Logo">
+                </a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="card blue">
+            <h2>What am I up to?</h2>
+
+            <p class="card-text">
+                Since graduation, I have been learning the basics of web development using modern methods and tools. I have been primarily focusing on the React Framework, but I thought I would take a break to learn some CSS so my website can look <em>FANTASTIC</em>.
+        
+            </p>
+
+            <div class="card-image">
+                <a href="https://www.linkedin.com/in/pavlo-triantafyllides/" target="_blank">
+                    <img src="./omb_crop.jpeg" alt="Me">
+                </a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</body>

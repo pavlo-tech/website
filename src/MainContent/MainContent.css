@@ -1,0 +1,17 @@
+.MainContent {
+  background-color:rgb(255, 255, 255);
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+
+
+
+  height: 60vh;
+  width: 68vw;
+  margin: 2vw 0 10vh 0;
+  float: left;
+
+  padding: 5px;
+  text-align: justify;
+}

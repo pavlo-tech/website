@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: Helvetica, Arial;
+    background-color: gray;
+    color: white;
+    font-size: 15px;
+}
+
+.main-banner {
+    background-color: rgb(54, 54, 54);
+    color: rgb(43, 43, 43);
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.main-banner h1 {
+    text-align: center;
+}
+
+.name {
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.card {
+    padding: 1%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: #522D80;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(53, 53, 53, 0.4);
+
+}
+.card h2, .card strong {
+    color: #F56600;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+.card-text {   
+    font-size: 18px;
+    padding-left: 2%;
+    float: left;
+    width: 65%;
+}
+
+.card-image {
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 35%;
+}
+.card-image img {
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+.blue {
+    background-color: dodgerblue;
+}
+.blue h2, .blue em {
+    color:rgb(0, 0, 0);
+}
+.blue img {
+    border-radius: 50%;
+}
+
+
+
+.green {
+    background-color: rgb(64, 211, 64);
+}
+.green h2, .green em, .green strong {
+    color:rgb(69, 208, 233);
+}

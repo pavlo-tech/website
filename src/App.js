@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Banner from './Banner/Banner';
+import Sidebar from './Sidebar/Sidebar';
+import MainContent from './MainContent/MainContent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  sidebarClicked = (event) => {
+    console.log(event.target.textContent);
+  }
+
+  render () {
+    return (
+      <div className="App">
+        <Banner/>
+        <Sidebar click={this.sidebarClicked}/>;
+        <MainContent>
+          {true? <h1>hello world</h1> :<p>hi mom</p>}
+        </MainContent>
+        <div style={{clear:'both'}}></div>
+      </div>
+    );
+  }
 }
 
 export default App;
