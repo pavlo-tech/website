@@ -1,21 +1,15 @@
 .Sidebar {
   background-color:rgb(255, 255, 255);
+  box-sizing: border-box;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
 
-  height: 60vh;
-  width: 10vw;
-  margin: 2vw 2vw 10vh 10vw;
+  height: 81.25%;
+  width: 15%;
+  margin: 2.5% 0 0 0;
   float: left;
 
-  text-align: center;
-}
-.Sidebar-p {
-  height: 20%;
-  margin:0px;
-
-
-  display:flex;
-  align-items: center;
+  list-style-type: none;
+  padding: 0;
   justify-content: center;
 }

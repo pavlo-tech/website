@@ -1,27 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './Sidebar.css';
+import SidebarItem from './SidebarItem/SidebarItem';
 
-const Sidebar = (props) =>
+class Sidebar extends Component
 {
-  const navKeys = props.navKeys;
+  constructor(props)
+  {
+    super(props);
+
+    const navKeys = props.navKeys;
   
-  const itemStyle ={
-    height:(100*1.0/ navKeys.length)+'%',
-    margin: '0px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+
+  
+    this.nav = navKeys.map((el,i) => 
+      <SidebarItem key={i}  click={props.click}>{el}</SidebarItem>
+    );
   }
 
-  const nav = navKeys.map((el,i) => 
-    <p key={i} style={itemStyle} onClick={props.click}>{el}</p>
-  );
 
-  return (
-    <div className="Sidebar">
-      {nav}
-    </div>
-  );
+  render() {
+    return (
+      <ul className="Sidebar">
+        {this.nav}
+      </ul>
+    );
+  }
 }
 
 export default Sidebar

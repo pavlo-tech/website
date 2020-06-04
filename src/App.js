@@ -30,11 +30,10 @@ class App extends Component {
 
   sidebarClickHandler = (event) => {
     const item = event.target.textContent;
-
+    console.log(event);
+    
     this.selectItem(item);
   }
-
-
 
 
   render () {
