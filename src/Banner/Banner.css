@@ -12,3 +12,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.Banner:hover {
+  background-color: rgb(103, 255, 116);
+}

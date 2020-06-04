@@ -9,20 +9,21 @@ class Sidebar extends Component
     super(props);
 
     const navKeys = props.navKeys;
-  
-
-  
+    
+    
     this.nav = navKeys.map((el,i) => 
-      <SidebarItem key={i}  click={props.click}>{el}</SidebarItem>
-    );
+      <SidebarItem key={i}  click={props.click} height={(100.0/ navKeys.length)+'%'}>
+        {el}
+      </SidebarItem>
+    )
   }
 
 
   render() {
     return (
-      <ul className="Sidebar">
+      <div className="Sidebar">
         {this.nav}
-      </ul>
+      </div>
     );
   }
 }

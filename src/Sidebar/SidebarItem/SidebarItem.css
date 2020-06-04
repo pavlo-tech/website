@@ -1,0 +1,14 @@
+.SidebarItem {
+  background-color: inherit;
+}
+
+.SidebarItem:hover {
+  background-color: rgb(103, 255, 116);
+}
+
+
+.SidebarItem:focus{
+  outline: 0;
+  box-shadow: none;
+  /*background-color: rgb(92, 92, 92);*/
+}

@@ -1,31 +1,25 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './SidebarItem.css';
 
-class SidebarItem extends Component
+const SidebarItem = (props) =>
 {
-  constructor(props)
-  {
-    super(props);
-
-    this.itemStyle = {
-      //height:(100*1.0/ navKeys.length)+'%',
-      height:'19.4%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      border: '1px solid #555'
-    }
-    this.props=props
-    
+  const itemStyle = {
+    height: props.height,
+    borderRadius:'20px',
+    width:'100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: 'none',
+    //backgroundColor: 'inherit',
+    boxShadow:'none'
+    //border: '1px solid #555'
   }
 
-  render ()
-  {
-    return (
-      <li className='SidebarItem' style={this.itemStyle} onClick={this.props.click}>
-        {this.props.children}
-      </li>
-    );
-  }
+  return (
+    <button className='SidebarItem' style={itemStyle} onClick={props.click}>
+      {props.children}
+    </button>
+  );
 }
 export default SidebarItem;

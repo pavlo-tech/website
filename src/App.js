@@ -9,6 +9,7 @@ class App extends Component {
   constructor(props)
   {
     super(props);
+
     this.navItems = {
       'home': <h2>Welcome home</h2>,
       'about me': <h2>about page</h2>,
@@ -30,7 +31,8 @@ class App extends Component {
 
   sidebarClickHandler = (event) => {
     const item = event.target.textContent;
-    console.log(event);
+    event.target.clicked=true;
+    console.log(event.target);
     
     this.selectItem(item);
   }
