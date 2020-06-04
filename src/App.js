@@ -31,8 +31,6 @@ class App extends Component {
 
   sidebarClickHandler = (event) => {
     const item = event.target.textContent;
-    event.target.clicked=true;
-    console.log(event.target);
     
     this.selectItem(item);
   }
