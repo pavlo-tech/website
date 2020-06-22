@@ -28,6 +28,7 @@
 #T3 { animation-delay: 345ms;  }
 #T4 { animation-delay: 180ms;  }
 #T5 { animation-delay: 0ms;  }
+
 :root{
   --topval: 0%;
   --botval: 80%;
