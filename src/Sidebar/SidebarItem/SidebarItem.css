@@ -1,5 +1,6 @@
 .SidebarItem {
   background-color: inherit;
+  font-size: 15px;
 }
 
 .SidebarItem:hover {
