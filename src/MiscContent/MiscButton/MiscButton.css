@@ -12,7 +12,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
-  border: 2px solid gray;
+  border: 2px solid #4d4b4b;
+  color: #4d4b4b;
   background-color: white;
   padding: 10px 30px;
   text-align: center;
@@ -20,25 +21,39 @@
   font-size: 16px;
   /*transition-duration: 0.4s;*/
   cursor: pointer;
-  animation-name: button-crazy 1s;
+ 
+}
+
+.MiscButton button:hover {
+  color: white;
+  animation: button-crazy2 1000ms;
   animation-iteration-count: infinite;
 }
 
-.MiscButton button :hover {
-  animation-name: button-crazy;
-  animation-duration: 1s;
-  
+@keyframes button-crazy2 {
+  0%    {background-color: rgb(252, 29, 29); color: rgb(111, 7, 185);}
+  10%   {background-color: rgb(255, 101, 30); color: rgb(0, 183, 255);}
+  20%   {background-color: yellow; color: rgb(8, 209, 8);}
+  30%   {background-color: rgb(8, 209, 8); color: yellow;} 
+  40%   {background-color: rgb(0, 183, 255); color: rgb(255, 101, 30);}
+  50%   {background-color: rgb(111, 7, 185); color: rgb(252, 29, 29);}
+  60%   {background-color: rgb(0, 183, 255); color: rgb(255, 101, 30);}
+  70%   {background-color: rgb(8, 209, 8); color: yellow;}
+  80%   {background-color: yellow; color: rgb(8, 209, 8);}
+  90%   {background-color: rgb(255, 101, 30); color: rgb(0, 183, 255);}
+  99%   {background-color: rgb(252, 29, 29); color: rgb(111, 7, 185);}
 }
+
 @keyframes button-crazy {
-  0%   {color: rgb(252, 29, 29);}
-  10%   {color: rgb(255, 101, 30);}
-  20%   {color: yellow;}
-  30%   {color: rgb(8, 209, 8);}
-  40%   {color: rgb(0, 183, 255);}
-  50%   {color: rgb(111, 7, 185);}
-  60%   {color: rgb(0, 183, 255);}
-  70%   {color: rgb(8, 209, 8);}
-  80%   {color: yellow;}
-  90%   {color: rgb(255, 101, 30);}
-  99%   {color: rgb(252, 29, 29);}
+  0%    {background-color: rgb(252, 29, 29); }
+  10%   {background-color: rgb(255, 101, 30);}
+  20%   {background-color: yellow;}
+  30%   {background-color: rgb(8, 209, 8);}
+  40%   {background-color: rgb(0, 183, 255);}
+  50%   {background-color: rgb(111, 7, 185); }
+  60%   {background-color: rgb(0, 183, 255);}
+  70%   {background-color: rgb(8, 209, 8);}
+  80%   {background-color: yellow;}
+  90%   {background-color: rgb(255, 101, 30);}
+  99%   {background-color: rgb(252, 29, 29);}
 }

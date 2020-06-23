@@ -19,7 +19,8 @@ class App extends Component {
       'about me': <AboutContent/>,
       'contact': <ContactContent/>,
       'stream': <p>this feature isn't ready yet</p>,
-      'misc': <MiscContnet/>
+      'misc': <MiscContnet/>,
+      'support me': <div/>
     };
 
     this.state = {
