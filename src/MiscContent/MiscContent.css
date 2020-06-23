@@ -1,0 +1,13 @@
+.MiscContent {
+  /*background-color: lawngreen;*/
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.MiscContent iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}

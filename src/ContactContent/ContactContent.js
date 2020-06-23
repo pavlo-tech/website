@@ -4,9 +4,6 @@ import pic from './self.jpeg';
 
 const ContactContent = (props) =>
 {
-  //<h1>Feel free to contact me!</h1>
-
-
   return (
     <div className="ContactContent">
       <h1 id='T0'>Feel</h1>

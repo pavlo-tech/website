@@ -6,6 +6,8 @@ import Sidebar from './Sidebar/Sidebar';
 import MainContent from './MainContent/MainContent';
 import ContactContent from './ContactContent/ContactContent';
 import HomeContent from './HomeContent/HomeContent';
+import AboutContent from './AboutContent/AboutContent';
+import MiscContnet from './MiscContent/MiscContent';
 
 class App extends Component {
   constructor(props)
@@ -14,10 +16,10 @@ class App extends Component {
 
     this.navItems = {
       'home': <HomeContent click={() => this.selectItem('contact')}/>,
-      'about me': <h2>about page</h2>,
+      'about me': <AboutContent/>,
       'contact': <ContactContent/>,
       'stream': <p>this feature isn't ready yet</p>,
-      'misc': <h1>I bet you want to know what goes here</h1>
+      'misc': <MiscContnet/>
     };
 
     this.state = {
