@@ -12,7 +12,7 @@ const AboutContent = () => {
         During my time at Clemson, I was an undergraduate researcher studying lossy compression, 
         which produced multiple posters and one <a href="https://ieeexplore.ieee.org/document/8891052" target="blank">publication</a>.
         Additionally, I spent 3 semesters working as a Test Engineer at Itron, Inc. During my co-op, I worked on databases, user interfaces,
-        robots, and computer vision. Starting Summer 2020 I will be working as a Test Engineer at Credit Karma &#x1F60A;!
+        robots, and computer vision. Starting Summer 2020 I will be working as a Software Engineer at Credit Karma &#x1F60A;!
          
       </p>
 
