@@ -18,9 +18,9 @@ class App extends Component {
       'home': <HomeContent click={() => this.selectItem('contact')}/>,
       'about me': <AboutContent/>,
       'contact': <ContactContent/>,
-      'stream': <p>this feature isn't ready yet</p>,
+      //'stream': <p>this feature isn't ready yet</p>,
       'misc': <MiscContnet/>,
-      'support me': <div/>
+      //'support me': <div/>
     };
 
     this.state = {
