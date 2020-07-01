@@ -16,7 +16,7 @@ const  MobileApp = (props) =>
       <p>
         Hi there!<br></br> <br></br>
         My name is Pavlo Triantafyllides, and this is the mobile version of pavlo.tech, my personal website.
-        While a mobile version of this site has not yet been built (and may never be), I would like to thank you for visiting.
+        While a true mobile version of the site has not yet been built (and may never be), I would like to thank you for visiting.
         For the full experience, please visit us (me) on a PC web browser such as Chrome, Firefox, or Safari. 
         <br></br> <br></br>
         This message will self destruct in {secondLeft} seconds.
