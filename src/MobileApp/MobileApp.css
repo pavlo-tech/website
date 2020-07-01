@@ -1,0 +1,48 @@
+.MobileApp {
+  color: #4d4b4b;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding-top: 2vh ;
+  box-sizing: border-box;
+  
+}
+@keyframes breathe {
+  0% {background-color:white}
+  50% {background-color: rgb(255, 115, 0);}
+  100% {background-color:white}
+}
+@keyframes disappear {
+  0% {color:#4d4b4b}
+  100% {color:white}
+}
+
+
+.MobileApp h1 {
+  margin: 0vh 2vw 2vh 2vw;
+  padding: 4vh;
+  font-size: 6vh;
+  width: 96vw;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8vh;
+
+  animation-name: breathe ;
+  animation-duration: 2s;
+  animation-iteration-count: 10;
+}
+
+.MobileApp p {
+  margin: 2vh 2vw;
+  padding: 6vh 7vw;
+  width: 96vw;
+  height: 62vh;
+  text-align: justify;
+  background-color: white;
+  border-radius: 8vh;
+  box-sizing: border-box;
+  color:white;
+  font-size: 2.5vh;
+  animation: disappear 20s ease-in; 
+}

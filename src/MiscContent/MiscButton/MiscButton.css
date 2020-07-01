@@ -29,6 +29,11 @@
   animation: button-crazy2 1000ms;
   animation-iteration-count: infinite;
 }
+.MiscButton button:focus{
+  outline: 0;
+  box-shadow: none;
+  /*background-color: rgb(92, 92, 92);*/
+}
 
 @keyframes button-crazy2 {
   0%    {background-color: rgb(252, 29, 29); color: rgb(111, 7, 185);}
