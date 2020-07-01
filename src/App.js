@@ -8,6 +8,7 @@ import ContactContent from './ContactContent/ContactContent';
 import HomeContent from './HomeContent/HomeContent';
 import AboutContent from './AboutContent/AboutContent';
 import MiscContnet from './MiscContent/MiscContent';
+import MobileApp from './MobileApp/MobileApp';
 
 class App extends Component {
   constructor(props)
@@ -43,7 +44,7 @@ class App extends Component {
   {
     if (isMobile)
     {
-      return <div>This site is not yet available on mobile devices</div>;
+      return <MobileApp/>;
     }
     else
     {
