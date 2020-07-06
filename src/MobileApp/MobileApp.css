@@ -9,7 +9,7 @@
 }
 @keyframes breathe {
   0% {background-color:white}
-  50% {background-color: rgb(255, 115, 0);}
+  50% {background-color: rgb(122, 228, 247);}
   100% {background-color:white}
 }
 @keyframes disappear {
@@ -30,7 +30,7 @@
 
   animation-name: breathe ;
   animation-duration: 2s;
-  animation-iteration-count: 10;
+  animation-iteration-count: 7;
 }
 
 .MobileApp p {
@@ -44,5 +44,5 @@
   box-sizing: border-box;
   color:white;
   font-size: 2.5vh;
-  animation: disappear 20s ease-in; 
+  animation: disappear 15s ease-in; 
 }

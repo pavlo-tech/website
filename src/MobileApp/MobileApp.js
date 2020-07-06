@@ -3,7 +3,7 @@ import './MobileApp.css'
 
 const  MobileApp = (props) =>
 {
-  const [secondLeft, setSeconds] = useState(20);
+  const [secondLeft, setSeconds] = useState(15);
 
   const decrementSeconds = () => {
     setSeconds(secondLeft > 0 ? secondLeft-1 : 0);
