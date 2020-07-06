@@ -22,12 +22,12 @@
   width: 80px;
 }
 
-#T5 { animation-delay: -880ms;  }
-#T4 { animation-delay: -680ms; }
-#T3 { animation-delay: -520ms;  }
-#T2 { animation-delay: -345ms;  }
-#T1 { animation-delay: -180ms;  }
 #T0 { animation-delay: 0ms;  }
+#T1 { animation-delay: -200ms; }
+#T2 { animation-delay: -360ms;  }
+#T3 { animation-delay: -535ms;  }
+#T4 { animation-delay: -700ms;  }
+#T5 { animation-delay: -880ms;  }
 
 :root{
   --topval: 0%;
