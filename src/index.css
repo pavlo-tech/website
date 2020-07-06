@@ -6,13 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-color: rgb(126, 231, 245);
-  position: relative;
+  background-color: rgb(204, 248, 208);
+  position: absolute;
   width: 100vw;
   height: 100vh;
+
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

@@ -8,7 +8,9 @@ import ContactContent from './ContactContent/ContactContent';
 import HomeContent from './HomeContent/HomeContent';
 import AboutContent from './AboutContent/AboutContent';
 import MiscContnet from './MiscContent/MiscContent';
+import AnimatedBG from './AnimatedBG/AnimatedBG';
 import MobileApp from './MobileApp/MobileApp';
+
 
 class App extends Component {
   constructor(props)
@@ -49,13 +51,17 @@ class App extends Component {
     else
     {
       return (
-        <div className="App">
-          <Banner click={() => this.selectItem('home')}/>
-          <Sidebar navKeys={Object.keys(this.navItems)} click={this.sidebarClickHandler}/>
-          <MainContent>
-            {this.navItems[this.state.selectedItem]}
-          </MainContent>
-          <div style={{clear:'both'}}></div>
+        <div className="MainDiv">
+        <AnimatedBG/>
+          <div className="App">
+            
+            <Banner click={() => this.selectItem('home')}/>
+            <Sidebar navKeys={Object.keys(this.navItems)} click={this.sidebarClickHandler}/>
+            <MainContent>
+              {this.navItems[this.state.selectedItem]}
+            </MainContent>
+            <div style={{clear:'both'}}></div>
+          </div>
         </div>
       );
     }

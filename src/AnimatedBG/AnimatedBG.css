@@ -1,0 +1,65 @@
+.AnimatedBG {
+  background-color: rgb(204, 248, 208);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.line {
+	box-sizing:border-box;
+	width: 150vw;
+    height: 1px;
+    position: absolute;	
+    left: -40vw; 
+    top:-20vh;
+}
+
+@keyframes wipe-left {
+  from { top:-20vh; -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    to   { top: 120vh; -webkit-transform: rotate(20deg); transform: rotate(20deg);}
+}
+@keyframes wipe-right {
+	from { top:-20vh;  -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+    to   {top: 120vh;  -webkit-transform: rotate(-20deg); transform: rotate(-20deg);}
+}
+
+#line-0 {
+	background-color: #AAA;
+	animation: 20s linear 0s infinite alternate wipe-left;
+}
+#line-1 {
+	background-color: #888;
+	animation: 20s linear 4s infinite alternate wipe-right;
+}
+#line-2 {
+	background-color: #666;
+	animation: 20s linear 8s infinite alternate wipe-left;
+}
+#line-3 {
+	background-color: #444;
+	animation: 20s linear 12s infinite alternate wipe-right;
+}
+#line-4 {
+	background-color: #222;
+	animation: 20s linear 16s infinite alternate wipe-left;
+}
+#line-5 {
+	background-color: #444;
+	animation: 20s linear 20s infinite alternate wipe-right;
+}
+#line-6 {
+	background-color: #666;
+	animation: 20s linear 24s infinite alternate wipe-left;
+}
+#line-7 {
+	background-color: #888;
+	animation: 20s linear 28s infinite alternate wipe-right;
+}
+#line-8 {
+	background-color: #AAA;
+	animation: 20s linear 32s infinite alternate wipe-left;
+}
+
+
